@@ -1,10 +1,13 @@
 import Header from './components/Header';
+import Karte from './components/Karte';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className='container'>
+    <Container>
       <Header />
-    </div>
+      <Karte />
+    </Container>
   );
 }
 

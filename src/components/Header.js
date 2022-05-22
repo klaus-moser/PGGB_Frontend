@@ -1,31 +1,29 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
+import PropTypes from "prop-types";
+import { Button, Row, Col, Container } from "react-bootstrap";
 
 function Header({ text }) {
-  
   return (
-    <header>
-      <div className='row'>
-        <div className='col-8'>
+    <Container>
+      <Row>
+        <Col sm={8}>
           <h1>{text}</h1>
           <h5>May the MEME be with you!</h5>
-        </div>
-        <div className='col-4'>
-          <button type="button" class="btn btn-primary">Login</button>
-          <button type="button" class="btn btn-secondary">Register</button>
-        </div>
-      </div>
-    </header>
-  )
+        </Col>
+        <Col sm={4}>
+          <Button variant="primary">Login</Button>{" "}
+          <Button variant="secondary">Register</Button>{" "}
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
 Header.defaultProps = {
-  text: 'Pan-Galactic-Gargle-Blaster',
-}
+  text: "Pan-Galactic-Gargle-Blaster",
+};
 
 Header.propTypes = {
   text: PropTypes.string,
-}
+};
 
-export default Header
+export default Header;
