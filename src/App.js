@@ -1,12 +1,13 @@
 import Header from "./components/Header";
 import Karte from "./components/Karte";
 import { Container } from "react-bootstrap";
+import Karten from './components/Karten';
 
 function App() {
   return (
     <Container>
       <Header />
-      <Karte titel={"Bertl"} date={"01.05.2022"} dir={"1.jpg"} />
+      <Karten />
     </Container>
   );
 }
