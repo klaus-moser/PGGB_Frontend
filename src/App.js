@@ -1,6 +1,13 @@
+import { Container } from "react-bootstrap";
+import Karten from './components/Karten';
+import Header from "./components/Header";
+
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <Container>
+      <Header />
+      <Karten />
+    </Container>
   );
 }
 
