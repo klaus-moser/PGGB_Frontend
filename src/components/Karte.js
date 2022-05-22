@@ -1,9 +1,12 @@
-import { Card } from 'react-bootstrap';
+import { Card } from "react-bootstrap";
 
-function Karte() {
+function Karte({ titel, date, dir }) {
   return (
-    <Card>
-      <Card.Body>This is some text within a card body.</Card.Body>
+    <Card style={{ width: "18rem" }}>
+      <Card.Img variant="top" src={dir} />
+      <Card.Body>
+        <Card.Title>{titel}</Card.Title>
+      </Card.Body>
     </Card>
   );
 }
