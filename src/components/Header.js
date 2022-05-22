@@ -6,10 +6,15 @@ function Header({ text }) {
   
   return (
     <header>
-      <div>
-        <h1>{text}</h1>
-        <h2>Your MEME dump!</h2>
-        <p>May the meme be with you!</p>
+      <div className='row'>
+        <div className='col-8'>
+          <h1>{text}</h1>
+          <h5>May the MEME be with you!</h5>
+        </div>
+        <div className='col-4'>
+          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-secondary">Register</button>
+        </div>
       </div>
     </header>
   )
