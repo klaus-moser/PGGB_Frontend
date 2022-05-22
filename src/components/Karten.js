@@ -1,5 +1,5 @@
-import Karte from './Karte';
 import { Container, Col, Row } from "react-bootstrap";
+import Karte from './Karte';
 
 function Karten() {
   return (
