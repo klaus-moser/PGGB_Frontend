@@ -18,12 +18,10 @@
 .env.test.local
 .env.production.local
 
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-public/1.jpg
-
-public/2.jpg
-
-public/3.jpg
+# Test images
+public/test_images/
