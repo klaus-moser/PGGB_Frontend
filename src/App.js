@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import Karten from "./components/Karten";
+import Gallerie from "./components/Gallerie";
 import Header from "./components/Header";
-import KartenData from "./components/KartenData";
+import TestData from "./components/TestData";
 
 function App() {
-  const [karte, setKarte] = useState(KartenData);
+  const [karte, setKarte] = useState(TestData);
 
   return (
     <Container>
       <Header />
-      <Karten karte={karte} />
+      <Gallerie karte={karte} />
     </Container>
   );
 }
