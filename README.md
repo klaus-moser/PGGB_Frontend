@@ -2,7 +2,7 @@
 
 ## Summery
 
-- This is a project to improve my skills to write a fully functioning backend using Python, FLask, SQLite and CSS & Javascript
+- This is a project to improve my skills to write a fully functioning full-stack project using Python, FLask, SQLite and CSS & React (Javascript) etc.
 - With this app it is possible to collect, like, comment as well as upload your favourite meme(s)
 - Important: This app/project is currently under construction! For more informations see project-branches
 
