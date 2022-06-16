@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Card } from "react-bootstrap";
 
 function Karte({ titel, dir }) {
@@ -10,5 +11,14 @@ function Karte({ titel, dir }) {
     </Card>
   );
 }
+
+Karte.defaultProps = {
+  text: "#Title",
+};
+
+Karte.propTypes = {
+  titel: PropTypes.string,
+  dir: PropTypes.string,
+};
 
 export default Karte;
