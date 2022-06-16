@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Pan-Galactic-Gargle-Blaster
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summery
 
-## Available Scripts
+- This is a project to improve my skills to write a fully functioning backend using Python, FLask, SQLite and CSS & Javascript
+- With this app it is possible to collect, like, comment as well as upload your favourite meme(s)
+- Important: This app/project is currently under construction! For more informations see project-branches
 
-In the project directory, you can run:
+#### *!!! More information (Table of contents, mockups, code, information about frameworks etc.) comeing soon!!!*
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wireframes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![I  Landing Page](https://user-images.githubusercontent.com/60796711/114477608-bf640880-9bfc-11eb-81e5-d4424539c4dd.png)
 
-### `npm test`
+![II  Register](https://user-images.githubusercontent.com/60796711/114477637-d0ad1500-9bfc-11eb-88ff-db0580fa2b17.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![III  Login](https://user-images.githubusercontent.com/60796711/114477650-d73b8c80-9bfc-11eb-9d47-f3a57377a9df.png)
 
-### `npm run build`
+![IV  Main Page (Logged-in)](https://user-images.githubusercontent.com/60796711/114477656-d9055000-9bfc-11eb-93f2-14d48a3a329d.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![V  Main Page (Out-logged)](https://user-images.githubusercontent.com/60796711/114477659-dacf1380-9bfc-11eb-815a-1d032ed05658.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![VI  Profile](https://user-images.githubusercontent.com/60796711/114477665-dc004080-9bfc-11eb-85fb-678d61c3d010.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![VII  Meme](https://user-images.githubusercontent.com/60796711/114477669-dd316d80-9bfc-11eb-98a3-15336753d0a6.png)
 
-### `npm run eject`
+![VIII  Contact](https://user-images.githubusercontent.com/60796711/114477672-defb3100-9bfc-11eb-8e52-c333d7a8e754.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Website
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://pan-galactic-gargle-blaster.de
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Table of Contents
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+__*** TODO ***__
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+__*** IN PROGRESS ***__
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### `/register`
+* Register with a given formular
+* Set Username, email, password, confirm password
 
-### Code Splitting
+#### `/contact`
+* Logged in:  Type message & send
+* Logged out: Put in email, type message & send
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### `/`
+* Landing page for unregistered & out logged users
 
-### Analyzing the Bundle Size
+#### `/login`
+* Login into existing account
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### `/gallery`
+* Main page
+* Shows a selection of memes
+* Sort memes for blast, new, last
+* Scroll through all memes
+* Select meme & goto page
 
-### Making a Progressive Web App
+#### `/upload`
+* Upload a new meme connected to the <user> account
+* Give <memename>, select <genre>, write <infotext>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### `/meme/<memename>`
+* Watch the meme page & all its infos
+* Owner: Edit <memename>, <genre> & <infotext>, delete meme
+* Logged in: Watch all meme infos, make comments, likes & fav
+* Logged out: Only watch all meme infos, comments, likes, favs
 
-### Advanced Configuration
+#### `/profile/<username>`
+* Watch all infos of user
+* Watch all own & fav memes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### `/edit_profile/<username>`
+* Edit email, username & password
+* Watch all own & fav memes
+* Edit & delete own memes
+* Edit Avatar
 
-### Deployment
+#### `/delete_account/<username>`
+* Delete user
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## User storie
 
-### `npm run build` fails to minify
+![PGGB_uses_cases_wb](https://user-images.githubusercontent.com/60796711/114630927-e8979e00-9cbb-11eb-9145-ed98b7677eaf.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Database Models & Schema
+
+__*** TODO ***__
+
+## Frontent
+
+__*** TODO ***__
+
+## Technologies & Frameworks
+
+__*** TODO ***__
+
+## Credits
+
+__*** TODO ***__
+
+#### *!!! More information (Table of contents, mockups, code & .db schmese, information about frameworks etc.) comeing soon!!!*
+
+
+
