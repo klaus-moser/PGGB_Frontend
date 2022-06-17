@@ -1,17 +1,17 @@
 import { Container, Col, Row } from "react-bootstrap";
-import Karte from "./Karte";
+import Meme from "./Meme";
 
-function Karten({ karte }) {
-  if (!karte || karte.length === 0) {
+function Gallerie({ memes }) {
+  if (!memes || memes.length === 0) {
     return <p>No Memes yet!</p>;
   }
 
   return (
     <Container>
       <Row>
-        {karte.map((item) => (
+        {memes.map((item) => (
           <Col sm>
-            <Karte title={item.title} dir={item.dir} />
+            <Meme title={item.title} dir={item.dir} />
           </Col>
         ))}
       </Row>
@@ -19,4 +19,4 @@ function Karten({ karte }) {
   );
 }
 
-export default Karten;
+export default Gallerie;

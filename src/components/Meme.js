@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Card } from "react-bootstrap";
 
-function Karte({ title, dir, text }) {
+function Meme({ title, dir, text }) {
   return (
 
     <Card style={{ width: "18rem" }} className="bg-dark text-white">
@@ -18,15 +18,15 @@ function Karte({ title, dir, text }) {
   );
 }
 
-Karte.defaultProps = {
+Meme.defaultProps = {
   title: "#title",
   text: "#text",
 };
 
-Karte.propTypes = {
+Meme.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
   dir: PropTypes.string,
 };
 
-export default Karte;
+export default Meme;
