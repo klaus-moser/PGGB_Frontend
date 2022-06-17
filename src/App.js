@@ -5,12 +5,12 @@ import Header from "./components/Header";
 import TestData from "./components/TestData";
 
 function App() {
-  const [karte, setKarte] = useState(TestData);
+  const [memes, setMemes] = useState(TestData);
 
   return (
     <Container>
       <Header />
-      <Gallerie karte={karte} />
+      <Gallerie memes={memes} />
     </Container>
   );
 }
