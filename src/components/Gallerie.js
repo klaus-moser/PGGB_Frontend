@@ -11,7 +11,7 @@ function Karten({ karte }) {
       <Row>
         {karte.map((item) => (
           <Col sm>
-            <Karte titel={item.title} dir={item.dir} />
+            <Karte title={item.title} dir={item.dir} />
           </Col>
         ))}
       </Row>
