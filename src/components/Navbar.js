@@ -5,15 +5,15 @@ import {ReactComponent as GallerieIcon} from '../assets/svg/art-gallery-15.svg'
 
 function Navbar() {
   return (
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            <ProfileIcon fill='#2c2c2c' width='36px' heigth='36px'/>
+    <footer className='navbar'>
+      <nav className='navbarNav'>
+        <ul className='navbarListItems'>
+          <li className='navbarListItem'>
+            <ProfileIcon fill='#2c2c2c' width='36px' height='36px'/>
             <p>Profile</p>
           </li>
-          <li>
-            <GallerieIcon fill='#2c2c2c' width='36px' heigth='36px'/>
+          <li className='navbarListItem'>
+            <GallerieIcon fill='#2c2c2c' width='36px' height='36px'/>
             <p>Gallerie</p>
           </li>
         </ul>
