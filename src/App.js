@@ -6,7 +6,7 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
-import Gallerie from "./pages/Gallerie";
+import Gallery from "./pages/Gallery";
 
 import Header from "./components/Header";
 import Navbar from './components/Navbar';
@@ -19,7 +19,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Gallerie memes={memes} />} />
+          <Route path='/' element={<Gallery memes={memes} />} />
           <Route path='/sign-in' element={<SignIn />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
