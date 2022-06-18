@@ -15,4 +15,4 @@ const TestData = [
   { id: 14, title: "Bertel 14", dir: "test_images/14.jpg" },
 ];
 
-export default TestData
+export default TestData;

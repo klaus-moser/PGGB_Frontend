@@ -1,11 +1,11 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Meme from "../components/Meme";
 
-function Gallerie({ memes }) {
+function Gallery({ memes }) {
   if (!memes || memes.length === 0) {
     return (
       <div>
-        <h1>Gallerie</h1>
+        <h1>Gallery</h1>
         <p>No Memes yet!</p>
       </div>
     );
@@ -13,7 +13,7 @@ function Gallerie({ memes }) {
 
   return (
     <>
-      <h1>Gallerie</h1>
+      <h1>Gallery</h1>
       <Container>
         <Row>
           {memes.map((item) => (
@@ -27,4 +27,4 @@ function Gallerie({ memes }) {
   );
 }
 
-export default Gallerie;
+export default Gallery;
