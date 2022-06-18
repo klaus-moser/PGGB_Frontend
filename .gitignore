@@ -25,3 +25,7 @@ yarn-error.log*
 
 # Test images
 public/test_images/
+
+src/assets/png/
+
+src/assets/svg/

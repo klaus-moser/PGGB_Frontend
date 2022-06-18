@@ -9,6 +9,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Gallerie from "./pages/Gallerie";
 
 import Header from "./components/Header";
+import Navbar from './components/Navbar';
 import TestData from "./components/TestData";
 
 function App() {
@@ -18,12 +19,13 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Gallerie />} />
+          <Route path='/' element={<Gallerie memes={memes} />} />
           <Route path='/sign-in' element={<SignIn />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/profile' element={<Profile />} />
         </Routes>
+        <Navbar />
       </Router>
     </>
   );
