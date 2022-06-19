@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/arrow-right.svg";
 import VisibilityIcon from "../assets/svg/visibilityIcon.svg";
-import { Button, Form, Alert, Image } from "react-bootstrap";
+import { Button, Form, Alert, Image, Row, Col } from "react-bootstrap";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -31,43 +31,55 @@ function SignIn() {
         </header>
 
         <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="Enter email"
-              id="email"
-              value={email}
-              onChange={onChange}
-            />
-          </Form.Group>
+          <Row>
+            <Col>
+              <Form.Floating className="mb-3">
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  id="email"
+                  value={email}
+                  onChange={onChange}
+                />
+                <label htmlFor="floatingInputCustom">Email address</label>
+              </Form.Floating>
+            </Col>
+            <Col>
+              <Form.Floating className="mb-3">
+                <Form.Control
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  id="password"
+                  value={password}
+                  onChange={onChange}
+                />
+                <label htmlFor="floatingPasswordCustom">Password</label>
+              </Form.Floating>
+              <Image
+                src={VisibilityIcon}
+                alt="show password"
+                onClick={() => setShowPassword((prevState) => !prevState)}
+              />
+            </Col>
+          </Row>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              type={showPassword ? "text" : "password"}
-              placeholder="Password"
-              id="password"
-              value={password}
-              onChange={onChange}
-            />
-          </Form.Group>
+          <Row>
+            <Button variant="primary">Sign-In</Button>
+          </Row>
 
-          <Image
-            src={VisibilityIcon}
-            alt="show password"
-            onClick={() => setShowPassword((prevState) => !prevState)}
-          />
+          <Row>
+            <Col>
+              <Alert key="danger" variant="danger">
+                <Alert.Link href="#">Forgot Password</Alert.Link>
+              </Alert>
+            </Col>
 
-          <Button variant="primary">Sign-In</Button>
-
-          <Alert key="danger" variant="danger">
-            <Alert.Link href="#">Forgot Password</Alert.Link>
-          </Alert>
-
-          <Alert key="secondary" variant="secondary">
-            <Alert.Link href="#">Sign Up Instead</Alert.Link>
-          </Alert>
+            <Col>
+              <Alert key="secondary" variant="secondary">
+                <Alert.Link href="#">Sign Up Instead</Alert.Link>
+              </Alert>
+            </Col>
+          </Row>
         </Form>
 
         {/* Google OAuth */}
