@@ -74,20 +74,14 @@ function SignUp() {
             </Col>
 
             <Col sm={"auto"}>
-              <Button variant="primary">Sign-In</Button>
+              <Button variant="primary">Sign-Up</Button>
             </Col>
           </Row>
 
           <Row>
             <Col>
-              <Alert key="danger" variant="danger">
-                <Alert.Link href="/forgot-password">Forgot Password</Alert.Link>
-              </Alert>
-            </Col>
-
-            <Col>
               <Alert key="secondary" variant="secondary">
-                <Alert.Link href="/sign-up">Sign Up Instead</Alert.Link>
+                <Alert.Link href="/sign-in">Sign In Instead</Alert.Link>
               </Alert>
             </Col>
           </Row>
