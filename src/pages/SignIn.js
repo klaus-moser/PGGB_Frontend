@@ -32,7 +32,7 @@ function SignIn() {
 
         <Form>
           <Row>
-            <Col>
+            <Col sm={5}>
               <Form.Floating className="mb-3">
                 <Form.Control
                   type="email"
@@ -44,7 +44,7 @@ function SignIn() {
                 <label htmlFor="floatingInputCustom">Email address</label>
               </Form.Floating>
             </Col>
-            <Col>
+            <Col sm={5}>
               <Form.Floating className="mb-3">
                 <Form.Control
                   type={showPassword ? "text" : "password"}
@@ -61,22 +61,21 @@ function SignIn() {
                 onClick={() => setShowPassword((prevState) => !prevState)}
               />
             </Col>
-          </Row>
-
-          <Row>
-            <Button variant="primary">Sign-In</Button>
+            <Col sm={2}>
+              <Button variant="primary">Sign-In</Button>
+            </Col>
           </Row>
 
           <Row>
             <Col>
               <Alert key="danger" variant="danger">
-                <Alert.Link href="#">Forgot Password</Alert.Link>
+                <Alert.Link href="/forgot-password">Forgot Password</Alert.Link>
               </Alert>
             </Col>
 
             <Col>
               <Alert key="secondary" variant="secondary">
-                <Alert.Link href="#">Sign Up Instead</Alert.Link>
+                <Alert.Link href="/sign-up">Sign Up Instead</Alert.Link>
               </Alert>
             </Col>
           </Row>
