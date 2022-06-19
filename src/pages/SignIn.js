@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { ReactComponent as ArrowRightIcon } from "../assets/svg/arrow-right.svg";
+import { useNavigate } from "react-router-dom";
 import VisibilityIcon from "../assets/svg/visibilityIcon.svg";
 import { Button, Form, Alert, Image, Row, Col } from "react-bootstrap";
 
