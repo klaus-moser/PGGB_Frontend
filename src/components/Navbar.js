@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { ReactComponent as ProfileIcon } from "../assets/svg/egghead-002.svg";
-import { ReactComponent as GallerieIcon } from "../assets/svg/art-gallery-15.svg";
+import { ReactComponent as ProfileIcon } from "../assets/svg/profile.svg";
+import { ReactComponent as GallerieIcon } from "../assets/svg/gallery.svg";
 
 function Navbar() {
   const navigate = useNavigate();

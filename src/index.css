@@ -50,3 +50,11 @@ html::-webkit-scrollbar {
 .navbarListItemNameActive {
   color: #2c2c2c;
 }
+
+.showPassword {
+  cursor: pointer;
+  position: absolute;
+  top: -4%;
+  right: 1%;
+  padding: 1rem;
+}
