@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/arrow-right.svg";
 import VisibilityIcon from "../assets/svg/visibilityIcon.svg";
-import { Button, Form, Alert } from "react-bootstrap";
+import { Button, Form, Alert, Image } from "react-bootstrap";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -52,6 +52,12 @@ function SignIn() {
               onChange={onChange}
             />
           </Form.Group>
+
+          <Image
+            src={VisibilityIcon}
+            alt="show password"
+            onClick={() => setShowPassword((prevState) => !prevState)}
+          />
 
           <Button variant="primary">Sign-In</Button>
 
