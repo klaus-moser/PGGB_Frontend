@@ -35,7 +35,6 @@ function SignIn() {
               <Form.Floating className="mb-3">
                 <Form.Control
                   type="email"
-                  placeholder="Enter email"
                   id="email"
                   value={email}
                   onChange={onChange}
@@ -47,7 +46,6 @@ function SignIn() {
               <Form.Floating className="mb-3">
                 <Form.Control
                   type={showPassword ? "text" : "password"}
-                  placeholder="Password"
                   id="password"
                   value={password}
                   onChange={onChange}
