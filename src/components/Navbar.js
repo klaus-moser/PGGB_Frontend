@@ -24,7 +24,7 @@ function Navbar() {
             />
             <p
               className={
-                pathMatchRoute("/")
+                pathMatchRoute("/profile")
                   ? "navbarListItemNameActive"
                   : "navbarListItemName"
               }
