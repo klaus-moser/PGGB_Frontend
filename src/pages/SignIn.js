@@ -55,13 +55,16 @@ function SignIn() {
                 />
                 <label htmlFor="floatingPasswordCustom">Password</label>
               </Form.Floating>
+            </Col>
+            <Col sm={"auto"}>
               <Image
                 src={VisibilityIcon}
                 alt="show password"
                 onClick={() => setShowPassword((prevState) => !prevState)}
               />
             </Col>
-            <Col sm={2}>
+
+            <Col sm={"auto"}>
               <Button variant="primary">Sign-In</Button>
             </Col>
           </Row>
